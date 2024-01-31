@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    {% block head %}
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="/static/main.css">
+    <script src="static/main.js"></script>
+    {% endblock %}
+</head>
+
+<body>
+  <h1>Quizlet</h1>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/profile">Profile</a>
+    <a href="/decks">Decks</a>
+    <a href="/create">Create a Deck</a>
+    <label for="search">Search: </label>
+    <input type="text" id="search" name="search">
+  </nav>
+
+  {% block content %}
+  {% endblock %}
+</body>

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Quizlet{% endblock %}
+
+{% block content %}
+<div id="myCards">
+  <h2>My Cards</h2>
+  <ul>
+      <li>
+          <a href="/deck1">Deck 1</a>
+      </li>
+      <li>
+          <a href="/deck2">Deck 2</a>
+      </li>
+      <li>
+          <a href="/deck3">Deck 3</a>
+      </li>
+  </ul>
+</div>
+
+<div id="popCards">
+  <h2>Popular Cards</h2>
+  <ul>
+      <li>
+          <a href="/pop1">Popular Deck 1</a>
+      </li>
+      <li>
+          <a href="/pop2">Popular Deck 2</a>
+      </li>
+      <li>
+          <a href="/pop3">Popular Deck 3</a>
+      </li>
+  </ul>
+</div>
+{% endblock %}
